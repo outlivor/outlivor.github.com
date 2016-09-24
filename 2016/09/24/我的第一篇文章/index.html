@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前端,nodejs,rasperberry pi,kali linux,html5,css3,javascript" />
+  <meta name="keywords" content="前端, nodejs, rasperberry pi, kali linux" />
 
 
 
@@ -84,16 +84,28 @@
 
 
 
-<meta name="description" content="前端到全栈，Kali到黑客">
+<meta name="description" content="SSH 反向链接-公司访问家里的树莓派###1.树莓派上安装autossh
+###2.树莓派上生成密钥
+###3.复制密钥到VPS
+###4.远程连接vps‘’ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
+###5.保持树莓派开机自启autossh‘’ nano /etc/rc.local‘’ autossh -M 109">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇文章">
 <meta property="og:url" content="http://yoursite.com/2016/09/24/我的第一篇文章/index.html">
 <meta property="og:site_name" content="我爱抽红双喜'Blog">
-<meta property="og:description" content="前端到全栈，Kali到黑客">
-<meta property="og:updated_time" content="2016-09-24T05:07:33.577Z">
+<meta property="og:description" content="SSH 反向链接-公司访问家里的树莓派###1.树莓派上安装autossh
+###2.树莓派上生成密钥
+###3.复制密钥到VPS
+###4.远程连接vps‘’ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
+###5.保持树莓派开机自启autossh‘’ nano /etc/rc.local‘’ autossh -M 109">
+<meta property="og:updated_time" content="2016-09-24T14:45:02.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇文章">
-<meta name="twitter:description" content="前端到全栈，Kali到黑客">
+<meta name="twitter:description" content="SSH 反向链接-公司访问家里的树莓派###1.树莓派上安装autossh
+###2.树莓派上生成密钥
+###3.复制密钥到VPS
+###4.远程连接vps‘’ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
+###5.保持树莓派开机自启autossh‘’ nano /etc/rc.local‘’ autossh -M 109">
 
 
 
@@ -296,7 +308,13 @@
       
 
       
-        
+        <h1 id="SSH-反向链接-公司访问家里的树莓派"><a href="#SSH-反向链接-公司访问家里的树莓派" class="headerlink" title="SSH 反向链接-公司访问家里的树莓派"></a>SSH 反向链接-公司访问家里的树莓派</h1><p>###1.树莓派上安装autossh</p>
+<p>###2.树莓派上生成密钥</p>
+<p>###3.复制密钥到VPS</p>
+<p>###4.远程连接vps<br>‘’ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111</p>
+<p>###5.保持树莓派开机自启autossh<br>‘’ <code>nano /etc/rc.local</code><br>‘’ autossh -M 10984 -N -f -R 19999:localhost:22 root@111.111.111.111 &amp;<br>‘’ chmod +x /etc/rc.local<br>‘’ /etc/rc.local</p>
+<p>###6通过VPS连接树莓派<br>‘’ ssh -p 19999 localhost</p>
+
       
     </div>
 
@@ -456,7 +474,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH-反向链接-公司访问家里的树莓派"><span class="nav-number">1.</span> <span class="nav-text">SSH 反向链接-公司访问家里的树莓派</span></a></li></ol></div>
             
           </div>
         </section>
