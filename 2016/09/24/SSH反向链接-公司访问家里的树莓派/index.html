@@ -86,23 +86,23 @@
 
 <meta name="description" content="SSH 反向链接-公司访问家里的树莓派此方法适用于：家里的树莓派安装的Kali系统
 1.树莓派上安装autossh2.树莓派上生成密钥3.复制密钥到VPS4.远程连接vps1$ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
-5.保持树莓派开机自启autossh1&apos;&apos; `nano /etc/rc.local`
-1&apos;&apos; auto">
+5.保持树莓派开机自启autossh1nano /etc/rc.local
+1autossh -M 1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSH反向链接-公司访问家里的树莓派">
 <meta property="og:url" content="http://yoursite.com/2016/09/24/SSH反向链接-公司访问家里的树莓派/index.html">
 <meta property="og:site_name" content="我爱抽红双喜'Blog">
 <meta property="og:description" content="SSH 反向链接-公司访问家里的树莓派此方法适用于：家里的树莓派安装的Kali系统
 1.树莓派上安装autossh2.树莓派上生成密钥3.复制密钥到VPS4.远程连接vps1$ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
-5.保持树莓派开机自启autossh1&apos;&apos; `nano /etc/rc.local`
-1&apos;&apos; auto">
-<meta property="og:updated_time" content="2016-09-25T14:58:19.572Z">
+5.保持树莓派开机自启autossh1nano /etc/rc.local
+1autossh -M 1">
+<meta property="og:updated_time" content="2016-09-25T15:13:39.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH反向链接-公司访问家里的树莓派">
 <meta name="twitter:description" content="SSH 反向链接-公司访问家里的树莓派此方法适用于：家里的树莓派安装的Kali系统
 1.树莓派上安装autossh2.树莓派上生成密钥3.复制密钥到VPS4.远程连接vps1$ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
-5.保持树莓派开机自启autossh1&apos;&apos; `nano /etc/rc.local`
-1&apos;&apos; auto">
+5.保持树莓派开机自启autossh1nano /etc/rc.local
+1autossh -M 1">
 
 
 
@@ -307,12 +307,12 @@
       
         <h2 id="SSH-反向链接-公司访问家里的树莓派"><a href="#SSH-反向链接-公司访问家里的树莓派" class="headerlink" title="SSH 反向链接-公司访问家里的树莓派"></a>SSH 反向链接-公司访问家里的树莓派</h2><p>此方法适用于：家里的树莓派安装的Kali系统</p>
 <h3 id="1-树莓派上安装autossh"><a href="#1-树莓派上安装autossh" class="headerlink" title="1.树莓派上安装autossh"></a>1.树莓派上安装autossh</h3><h3 id="2-树莓派上生成密钥"><a href="#2-树莓派上生成密钥" class="headerlink" title="2.树莓派上生成密钥"></a>2.树莓派上生成密钥</h3><h3 id="3-复制密钥到VPS"><a href="#3-复制密钥到VPS" class="headerlink" title="3.复制密钥到VPS"></a>3.复制密钥到VPS</h3><h3 id="4-远程连接vps"><a href="#4-远程连接vps" class="headerlink" title="4.远程连接vps"></a>4.远程连接vps</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111</div></pre></td></tr></table></figure>
-<h3 id="5-保持树莓派开机自启autossh"><a href="#5-保持树莓派开机自启autossh" class="headerlink" title="5.保持树莓派开机自启autossh"></a>5.保持树莓派开机自启autossh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">''</span> `nano /etc/rc.local`</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">''</span> autossh -M 10984 -N <span class="_">-f</span> -R 19999:localhost:22 root@111.111.111.111 &amp;</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">''</span> chmod +x /etc/rc.local</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">''</span> /etc/rc.local</div></pre></td></tr></table></figure>
+<h3 id="5-保持树莓派开机自启autossh"><a href="#5-保持树莓派开机自启autossh" class="headerlink" title="5.保持树莓派开机自启autossh"></a>5.保持树莓派开机自启autossh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano /etc/rc.local</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">autossh -M 10984 -N <span class="_">-f</span> -R 19999:localhost:22 root@111.111.111.111 &amp;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod +x /etc/rc.local</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/rc.local</div></pre></td></tr></table></figure>
 <p>###6通过VPS连接树莓派</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">''</span> ssh -p 19999 localhost</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -p 19999 localhost</div></pre></td></tr></table></figure>
       
     </div>
 
