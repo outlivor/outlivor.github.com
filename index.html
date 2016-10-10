@@ -304,7 +304,8 @@
           
           SSH 反向链接-公司访问家里的树莓派此方法适用于：家里的树莓派安装的Kali系统
 1.树莓派上安装autossh2.树莓派上生成密钥3.复制密钥到VPS4.远程连接vps1$ autossh -M 10984 -R 19999:localhost:22 root@111.111.111.111
-5
+5.保持树莓派开机自启autossh1nano /etc/rc.local
+1autossh -M 10984 -N -f -R 19999:localhost:22 root@111.111.111.
           ...
 
           <div class="post-more-link text-center">
@@ -403,7 +404,9 @@
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
+M
           ...
 
           <div class="post-more-link text-center">
